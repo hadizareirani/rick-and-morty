@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { fetchAll } = useCharacter();
-const { data: characters, pending } = await fetchAll();
+const { data: characters } = await fetchAll();
 </script>
 <template>
   <div class="flex flex-col gap-16">
