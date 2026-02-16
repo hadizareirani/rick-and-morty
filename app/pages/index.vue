@@ -19,7 +19,7 @@ const { data: characters } = await fetchAll({
 
 <template>
   <div class="flex flex-col">
-    <AppHeader>
+    <AppHeader :gradient-hide-in-mobile="true">
       <SearchBar />
     </AppHeader>
 
@@ -27,14 +27,18 @@ const { data: characters } = await fetchAll({
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
       >
-        <CharacterCard
+        <NuxtLink
           v-for="character in characters?.results"
           :key="character.id"
-          :name="character.name"
-          :image="character.image"
-          :status="character.status"
-          :species="character.species"
-        />
+          :to="`/${character.id}`"
+        >
+          <CharacterCard
+            :name="character.name"
+            :image="character.image"
+            :status="character.status"
+            :species="character.species"
+          />
+        </NuxtLink>
       </div>
 
       <PaginationBar

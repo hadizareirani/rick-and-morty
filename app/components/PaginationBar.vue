@@ -104,7 +104,7 @@ const goToNext = () => goToPage(props.currentPage + 1);
 
 <style scoped>
 .pagination-btn {
-  @apply w-6 h-6 flex items-center font-medium justify-center rounded-full text-grayLight hover:bg-glow hover:text-darkCyan disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-base;
+  @apply flex h-6 w-6 items-center justify-center rounded-full text-base font-medium text-grayLight transition-colors disabled:cursor-not-allowed disabled:opacity-50 hover:bg-glow hover:text-darkCyan;
 }
 
 .pagination-active {
