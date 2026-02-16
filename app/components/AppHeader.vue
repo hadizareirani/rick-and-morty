@@ -1,11 +1,12 @@
+import { NuxtImg } from '../../.nuxt/components';
 <template>
   <header class="bg-gray-900 py-6 px-6">
     <div class="container mx-auto">
       <div class="flex items-center gap-8">
         <!-- Logo (shared) -->
         <NuxtLink to="/" class="flex-shrink-0">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg"
+          <NuxtImg
+            src="/images/logo.png"
             alt="Rick and Morty Logo"
             class="h-12"
           />
