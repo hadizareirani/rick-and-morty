@@ -12,6 +12,8 @@ export default {
     extend: {
       colors: {
         background: "#2C2E30",
+        dark: "#0E0E0E",
+        glow: "#B2DF28",
       },
     },
   },

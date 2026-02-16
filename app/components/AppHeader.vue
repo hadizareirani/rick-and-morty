@@ -1,23 +1,25 @@
 import { NuxtImg } from '../../.nuxt/components';
 <template>
-  <header class="bg-gray-900 py-6 px-6">
-    <div class="container mx-auto">
-      <div class="flex items-center gap-8">
-        <!-- Logo (shared) -->
+  <header
+    class="bg-gradient-to-r from-background to-dark overflow-hidden relative"
+  >
+    <ContainerWrapper class="flex flex-col relative z-10">
+      <div class="py-3">
         <NuxtLink to="/" class="flex-shrink-0">
           <NuxtImg
             src="/images/logo.png"
             alt="Rick and Morty Logo"
-            class="h-12"
+            class="h-9"
           />
         </NuxtLink>
-
-        <!-- Different content per page -->
-        <div class="flex-1">
-          <slot />
-        </div>
       </div>
-    </div>
+      <div>
+        <slot />
+      </div>
+      <i
+        class="absolute bg-glow blur-[5rem] h-[9.5rem] rounded-full start-40 top-1/2 w-[12.5rem]"
+      />
+    </ContainerWrapper>
   </header>
 </template>
 
