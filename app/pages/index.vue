@@ -7,8 +7,13 @@ const page = computed(() => {
   return pageParam ? parseInt(pageParam as string) : 1;
 });
 
+const searchName = computed(() => {
+  return route.query.name ? (route.query.name as string) : undefined;
+});
+
 const { data: characters } = await fetchAll({
   page: computed(() => page.value.toString()),
+  name: searchName,
 });
 </script>
 

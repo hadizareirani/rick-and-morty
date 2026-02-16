@@ -9,8 +9,14 @@ defineProps<Props>();
   <div
     class="border border-transparent flex flex-col gap-4 p-4 rounded-2xl w-full hover:border-grayCard"
   >
-    <div>
-      <NuxtImg :src="image" :alt="name" class="w-full h-auto rounded-lg" />
+    <div class="bg-gray rounded-lg overflow-hidden">
+      <NuxtImg
+        :src="image"
+        :alt="name"
+        class="w-full h-auto rounded-lg transition-opacity duration-300"
+        loading="lazy"
+        placeholder
+      />
     </div>
     <div class="flex flex-col gap-4">
       <h2 class="font-bold text-white text-xl">{{ name }}</h2>

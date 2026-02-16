@@ -6,6 +6,7 @@ interface Props {
 
 const props = defineProps<Props>();
 const router = useRouter();
+const route = useRoute();
 
 const pageNumbers = computed(() => {
   const pages: (number | string)[] = [];
@@ -36,7 +37,7 @@ const pageNumbers = computed(() => {
 
 const goToPage = (page: number) => {
   if (page >= 1 && page <= props.totalPages && page !== props.currentPage) {
-    router.push({ query: { page: page.toString() } });
+    router.push({ query: { ...route.query, page: page.toString() } });
   }
 };
 
