@@ -16,6 +16,9 @@ export default {
         darkCyan: "#00333D",
         glow: "#B2DF28",
         gray: "#3B3D3F",
+        grayCard: "#404244",
+        alive: "#00FF80",
+        dead: "#FF1E00",
       },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
