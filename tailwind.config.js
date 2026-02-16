@@ -17,6 +17,7 @@ export default {
         glow: "#B2DF28",
         gray: "#3B3D3F",
         grayCard: "#404244",
+        grayLight: "#989A9C",
         alive: "#00FF80",
         dead: "#FF1E00",
       },

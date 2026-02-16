@@ -9,7 +9,7 @@
       <button
         class="bg-glow flex font-medium gap-2 items-center justify-center px-4 rounded shrink-0 text-darkCyan text-sm"
       >
-        <SearchIcon :size="20" class="text-darkCyan" />
+        <IconSearch :size="20" class="text-darkCyan" />
         Search
       </button>
     </div>

@@ -1,5 +1,5 @@
 export const useCharacter = () => {
-  const fetchAll = (query?: Record<string, string>) =>
+  const fetchAll = (query?: Record<string, unknown>) =>
     useFetch("/api/character", {
       query,
     });

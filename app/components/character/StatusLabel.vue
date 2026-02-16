@@ -11,7 +11,7 @@ defineProps<Props>();
       :class="{
         'bg-alive': status === 'Alive',
         'bg-dead': status === 'Dead',
-        'bg-gray-500': status === 'unknown',
+        'bg-yellow-500': status === 'unknown',
       }"
       class="h-3 rounded-full w-3"
     />
