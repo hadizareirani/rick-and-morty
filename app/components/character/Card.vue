@@ -7,12 +7,12 @@ defineProps<Props>();
 
 <template>
   <div
-    class="border border-transparent flex flex-col p-4 rounded-2xl w-full hover:border-grayCard"
+    class="border border-transparent flex flex-col gap-4 p-4 rounded-2xl w-full hover:border-grayCard"
   >
     <div>
       <NuxtImg :src="image" :alt="name" class="w-full h-auto rounded-lg" />
     </div>
-    <div>
+    <div class="flex flex-col gap-16">
       <h2 class="font-bold text-white text-xl">{{ name }}</h2>
       <CharacterStatusLabel :status="status" :species="species" />
     </div>
