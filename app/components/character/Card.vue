@@ -2,7 +2,7 @@
 defineProps({
   name: String,
   image: String,
-  status: String,
+  status: 'Alive' | 'Dead' | 'unknown,
   species: String,
 });
 </script>
