@@ -11,7 +11,7 @@ withDefaults(defineProps<Props>(), {
     class="bg-gradient-to-r from-background to-dark overflow-hidden relative"
   >
     <ContainerWrapper class="flex flex-col relative z-10">
-      <div class="py-3">
+      <div class="py-3 select-none">
         <NuxtLink to="/" class="flex-shrink-0">
           <NuxtImg
             src="/images/logo.png"

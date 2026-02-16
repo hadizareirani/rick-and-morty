@@ -26,7 +26,14 @@ if (error.value) {
 
 <template>
   <div>
-    <AppHeader> </AppHeader>
+    <AppHeader>
+      <CharacterHeaderInfo
+        :name="character!.name"
+        :image="character!.image"
+        :status="character!.status"
+        :species="character!.species"
+      />
+    </AppHeader>
   </div>
 </template>
 
