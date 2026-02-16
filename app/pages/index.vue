@@ -1,11 +1,46 @@
 <template>
-  <div class="min-h-screen bg-gray-100 flex items-center justify-center">
-    <div class="bg-white p-8 rounded-lg shadow-lg">
-      <h1 class="text-3xl font-bold text-blue-600 mb-4">Rick and Morty App</h1>
-      <p class="text-gray-700">
-        TypeScript, TailwindCSS & ESLint configured! ✨
-      </p>
-    </div>
+  <div>
+    <!-- <AppHeader> </AppHeader> -->
+
+    <main class="container mx-auto px-6 py-12">
+      <pre>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo
+      excepturi ipsam dicta incidunt ratione quo ullam aspernatur officiis ipsum
+      quaerat rem quidem, labore laudantium. Aliquid tempore quis delectus iure!
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo
+      excepturi ipsam dicta incidunt ratione quo ullam aspernatur officiis ipsum
+      quaerat rem quidem, labore laudantium. Aliquid tempore quis delectus iure!
+
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo
+      excepturi ipsam dicta incidunt ratione quo ullam aspernatur officiis ipsum
+      quaerat rem quidem, labore laudantium. Aliquid tempore quis delectus iure!
+
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo
+      excepturi ipsam dicta incidunt ratione quo ullam aspernatur officiis ipsum
+      quaerat rem quidem, labore laudantium. Aliquid tempore quis delectus iure!
+
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit explicabo
+      excepturi ipsam dicta incidunt ratione quo ullam aspernatur officiis ipsum
+      quaerat rem quidem, labore laudantium. Aliquid tempore quis delectus iure!
+     </pre
+      >
+    </main>
   </div>
 </template>
+
+<!-- 
+<script setup lang="ts">
+const searchQuery = ref("");
+
+const searchCharacters = () => {
+  if (searchQuery.value.trim()) {
+    // Navigate to character page or perform search
+    console.log("Searching for:", searchQuery.value);
+  }
+};
+</script> -->
 
