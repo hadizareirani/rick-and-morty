@@ -13,11 +13,11 @@ import { NuxtImg } from '../../.nuxt/components';
           />
         </NuxtLink>
       </div>
-      <div>
+      <div class="relative z-10">
         <slot />
       </div>
       <i
-        class="absolute bg-glow blur-[5rem] h-[9.5rem] rounded-full start-40 top-1/2 w-[12.5rem]"
+        class="absolute bg-glow blur-[5rem] h-[9.5rem] rounded-full start-40 top-1/2 w-[12.5rem] z-0"
       />
     </ContainerWrapper>
   </header>

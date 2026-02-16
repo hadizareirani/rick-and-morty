@@ -13,7 +13,12 @@ export default {
       colors: {
         background: "#2C2E30",
         dark: "#0E0E0E",
+        darkCyan: "#00333D",
         glow: "#B2DF28",
+        gray: "#3B3D3F",
+      },
+      fontFamily: {
+        rubik: ["Rubik", "sans-serif"],
       },
     },
   },

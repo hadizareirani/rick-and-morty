@@ -1,6 +1,8 @@
 <template>
   <div>
-    <AppHeader> </AppHeader>
+    <AppHeader>
+      <SearchBar />
+    </AppHeader>
   </div>
 </template>
 
