@@ -1,15 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./app.vue",
-    "./error.vue",
+    "./app/components/**/*.{js,vue,ts}",
+    "./app/layouts/**/*.vue",
+    "./app/pages/**/*.vue",
+    "./app/plugins/**/*.{js,ts}",
+    "./app/app.vue",
+    "./app/error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: "#2C2E30",
+        dark: "#0E0E0E",
+        darkCyan: "#00333D",
+        glow: "#B2DF28",
+        gray: "#3B3D3F",
+      },
+      fontFamily: {
+        rubik: ["Rubik", "sans-serif"],
+      },
+    },
   },
   plugins: [],
-}
+};
