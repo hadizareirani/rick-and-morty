@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./app/components/**/*.{js,vue,ts}",
@@ -20,6 +21,12 @@ export default {
         grayLight: "#989A9C",
         alive: "#00FF80",
         dead: "#FF1E00",
+        cyan: {
+          DEFAULT: '#0AD7F1',
+        },
+        grayMedium: {
+          DEFAULT: '#989898',
+        },
       },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
