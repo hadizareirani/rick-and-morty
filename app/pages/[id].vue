@@ -1,5 +1,5 @@
-import { AppHeader } from '../../.nuxt/components';
 <script lang="ts" setup>
+
 const route = useRoute();
 const { fetchOne } = useCharacter();
 
@@ -34,6 +34,10 @@ if (error.value) {
         :species="character!.species"
       />
     </AppHeader>
+
+    <ContainerWrapper class="flex flex-col gap-16 py-16">
+      <EpisodesSectionWrapper :episode="character!.episode"/>
+      <LocationSectionWrapper :location="character!.location" />
+    </ContainerWrapper>
   </div>
 </template>
-
