@@ -6,15 +6,15 @@ defineProps<Props>();
 </script>
 
 <template>
-  <div class="flex items-center py-16">
+  <div class="flex flex-col gap-4 py-16 md:flex-row md:gap-12 md:items-center">
     <NuxtImg
-      :src="image"
+      :src="image" 
       :alt="name"
-      class="w-60 h-60 rounded-lg mr-6 object-cover"
+      class="w-60 h-60 rounded-lg object-cover"
       loading="lazy"
       placeholder
     />
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4  ">
       <h1 class="font-bold text-white text-3xl">{{ name }}</h1>
       <CharacterStatusLabel :status="status" :species="species" />
     </div>
