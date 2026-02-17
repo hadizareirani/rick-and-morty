@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue';
 import { useLocation } from '~/composables/useLocation';
+import { extractIdFromUrl } from '~/utils/extractIdFromUrl';
 import type { Location } from '~/types/location';
 import type { ICharacter } from '~/types/character';
 
@@ -11,7 +12,7 @@ const locationData = ref<Location | null>(null);
 
 onMounted(async () => {
   if (props.location?.url) {
-    const id = props.location.url.split('/').pop();
+    const id = extractIdFromUrl(props.location.url);
     if (id) {
       locationData.value = await useLocation(id);
     }

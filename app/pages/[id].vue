@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+
 const route = useRoute();
 const { fetchOne } = useCharacter();
 
@@ -34,22 +35,9 @@ if (error.value) {
       />
     </AppHeader>
 
-    <ContainerWrapper class="flex flex-col gap-6 py-16">
-      <!-- <section class="flex flex-col gap-4">
-        <CharacterSectionTitle>
-          <template #icon>
-            <IconEpisodes class="w-6 h-6 text-glow" />
-          </template>
-          <template #title>Episodes</template>
-        </CharacterSectionTitle>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <CharacterInfoCard>
-            <template #title>{{character?.location.name}}</template>
-            <template #value>{{`Origin: ${character?.origin.name}`  }}</template>
-          </CharacterInfoCard>
-        </div>
-      </section> -->
-    <LocationSectionWrapper :location="character!.location" />
+    <ContainerWrapper class="flex flex-col gap-16 py-16">
+      <EpisodesSectionWrapper :episode="character!.episode"/>
+      <LocationSectionWrapper :location="character!.location" />
     </ContainerWrapper>
   </div>
 </template>
