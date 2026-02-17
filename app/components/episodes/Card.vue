@@ -1,29 +1,14 @@
 <script lang="ts" setup>
-import { ref, onMounted } from 'vue';
-import { useEpisode } from '~/composables/useEpisode';
-import { extractIdFromUrl } from '~/utils/extractIdFromUrl';
 import type { Episode } from '~/types/episode';
 
-const props = defineProps<{ episodeUrl: string }>();
-
-const episodeData = ref<Episode | null>(null);
-
-onMounted(async () => {
-    if (props.episodeUrl) {
-        const id = extractIdFromUrl(props.episodeUrl);
-        if (id) {
-            const data = await useEpisode(id);
-            episodeData.value = data as Episode;
-        }
-    }
-});
+defineProps<{ episode: Episode | null }>();
 </script>
 <template>
 <div>
-    <InfoCard v-if="episodeData">
-        <template #title>{{ episodeData.name }}</template>
-        <template #value>{{ episodeData.episode }}</template>
-        <template #extra>{{ episodeData.air_date }}</template>
+    <InfoCard v-if="episode">
+        <template #title>{{ episode.name }}</template>
+        <template #value>{{ episode.episode }}</template>
+        <template #extra>{{ episode.air_date }}</template>
     </InfoCard>
     <InfoCard v-else>
         <template #title>Loading...</template>
