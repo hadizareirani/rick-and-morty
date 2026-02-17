@@ -1,4 +1,3 @@
-import { AppHeader } from '../../.nuxt/components';
 <script lang="ts" setup>
 const route = useRoute();
 const { fetchOne } = useCharacter();
@@ -36,4 +35,3 @@ if (error.value) {
     </AppHeader>
   </div>
 </template>
-
