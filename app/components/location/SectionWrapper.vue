@@ -14,7 +14,7 @@ onMounted(async () => {
   if (props.location?.url) {
     const id = extractIdFromUrl(props.location.url);
     if (id) {
-      locationData.value = await useLocation(id);
+      locationData.value = await useLocation(id) as Location | null;
     }
   }
 });
